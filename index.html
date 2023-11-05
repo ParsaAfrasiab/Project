@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <style>
+        .Parent1>div {
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            border-radius: 0;
+        }
+
+        .items1 {
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            border-radius: 0;
+        }
+
+        @media screen and (min-width:768px) {
+            .Parent1>div {
+                box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                border-radius: 0;
+                margin-top: -110px !important;
+            }
+        }
+
+        .hovers {
+            transition: 0.5s;
+        }
+
+        .hovers:hover {
+            color: #fff;
+            background: #ffc107;
+            transition: 0.5s;
+        }
+
+        .imgRadios {
+            border-radius: 50%;
+            width: 150px !important;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .card-body,
+        .card-header,
+        .card {
+            border: 0;
+        }
+
+        .Parentt {
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            border-radius: 0;
+        }
+
+        .inputGroups {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border: 0;
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-black row justify-content-between m-0" style="height: 50px;padding-left: 30px;">
+        <div class="col-6 col-lg-3 h-100 m-0">
+            <i class="fa fa-phone align-items-center " style="font-size:20px;color: #984c09;line-height: 50px;"></i>
+            <h6 class="d-inline text-white ">Call: +98 9123456789</h6>
+        </div>
+        <div class="col-6 col-lg-3 h-100 m-0">
+            <i class="fa fa-envelope" style="font-size:20px;color: #984c09;line-height: 50px;"></i>
+            <h6 class="d-inline text-white ">Email: xmp@gmail.com</h6>
+        </div>
+    </div>
+    <header class="bg-primary-subtle w-100 min-vh-100 m-0 p-0">
+        <div class="row justify-content-between m-0" style="height: 65px;padding-left: 30px;">
+            <div class="col-1 h-100">
+                <h3 class="text-primary " style="line-height: 65px;">INANCE</h3>
+            </div>
+            <i class="fa fa-bars m-0 col-2 mt-3 d-sm-none" style="font-size: 50px;" data-bs-toggle="collapse"
+                data-bs-target="#risMenu"></i>
+            <nav class="col-sm-10 col-md-8 col-lg-5 h-100 m-0 d-none d-sm-block ">
+                <ul class="w-100 justify-content-center m-0" style="padding-left: 0px;">
+                    <li class="list-inline-item " style="line-height: 65px;"><a
+                            class="text-decoration-none fw-semibold  text-primary fs-6 p-3 " href="">Home</a></li>
+                    <li class="list-inline-item " style="line-height: 65px;"><a
+                            class="text-decoration-none fw-semibold  text-black fs-6 p-3 " href="">About</a></li>
+                    <li class="list-inline-item " style="line-height: 65px;"><a
+                            class="text-decoration-none fw-semibold  text-black fs-6 p-3 " href="">Services</a></li>
+                    <li class="list-inline-item " style="line-height: 65px;"><a
+                            class="text-decoration-none fw-semibold  text-black fs-6 p-3 " href="">Contact Us</a></li>
+                </ul>
+            </nav>
+            <section class="w-100 m-0 collapse " id="risMenu" style="height: 100px;">
+                <nav class="col-sm-10 col-md-8 col-lg-5 h-100 m-0 d-sm-none">
+                    <ul class="w-100 justify-content-center m-0" style="padding-left: 0px;">
+                        <li class="list-inline-item " style="line-height: 65px;"><a
+                                class="text-decoration-none fw-semibold  text-primary fs-6 p-3 " href="">Home</a></li>
+                        <li class="list-inline-item " style="line-height: 65px;"><a
+                                class="text-decoration-none fw-semibold  text-black fs-6 p-3 " href="">About</a></li>
+                        <li class="list-inline-item " style="line-height: 65px;"><a
+                                class="text-decoration-none fw-semibold  text-black fs-6 p-3 " href="">Services</a></li>
+                        <li class="list-inline-item " style="line-height: 65px;"><a
+                                class="text-decoration-none fw-semibold  text-black fs-6 p-3 " href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+        <div class="row m-0 w-100 mt-5">
+            <div class="col-12 col-lg-6 p-5 m-0 ">
+                <h1 class="m-5 mb-0 fw-bold text-primary  " style="font-size: 50px;">Repair
+                    And<br>Maintenance<br>Services
+                </h1>
+                <br>
+                <p class="m-5 mt-0 mb-0 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam rem molestiae
+                    tempore, excepturi totam
+                    laboriosam earum aut, assumenda vitae facere minus laudantium nisi labore nihil? Illo nisi tenetur
+                    dicta culpa?
+                </p>
+                <br>
+                <button class="m-5 mb-0 mt-0 btn btn-warning text-white p-5 pt-2 pb-2">Contact Us</button>
+            </div>
+            <div class="col-12 col-lg-6 m-0 p-3 text-center ">
+                <img class="" src="images/slider-img.png" alt="" width="485px">
+            </div>
+        </div>
+    </header>
+    <div class="Parent1 row w-100 justify-content-center  ">
+        <div class="hovers card border-0 col-10 col-md-3 p-5 pt-5 pb-3 m-2"
+            style="margin-left: 30px;margin-right: 30px;">
+            <img class="mx-auto mb-3" src="images/tools.svg" alt="" width="100px">
+            <h4 class="mx-auto ">REPAIR</h4>
+        </div>
+        <div class="card border-0 col-10 col-md-3 p-5 pt-5 pb-3 bg-warning text-white m-2"
+            style="margin-left: 30px;margin-right: 30px;">
+            <img class="mx-auto mb-3 " src="images/construction.svg" alt="" width="100px" style="color: #fff;">
+            <h4 class="mx-auto ">IMPROVE</h4>
+        </div>
+        <div class="hovers card border-0 col-10 col-md-3 p-5 pt-5 pb-3 m-2"
+            style="margin-left: 30px;margin-right: 30px;">
+            <img class="mx-auto mb-3" src="images/maintenance.svg" alt="" width="100px">
+            <h4 class="mx-auto ">MAINTAIN</h4>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="row w-100 justify-content-center  m-0" style="min-height: 55vh;">
+        <div class="col-lg-5 m-0 align-items-center p-5 pt-md-2 ">
+            <br><br>
+            <h1 class="mb-3">
+                ABOUT US
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem animi inventore illo recusandae. Mollitia
+                quidem, vero eveniet et placeat blanditiis pariatur maxime nihil distinctio eos voluptatibus, doloremque
+                sapiente odit commodi Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus unde
+                est autem?<span id="here1" class="collapse">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Rem minus eos, nostrum consectetur sunt accusantium?</span>
+            </p>
+            <button data-bs-toggle="collapse" data-bs-target="#here1" style="border-radius: 2px;"
+                class="btn btn-primary p-5 pt-2 pb-2 fw-bold ">READ MORE</button>
+        </div>
+        <div class="col-lg-5 mt-md-5 mt-lg-4 m-0">
+            <img class="img-fluid w-100" src="images/about-img.jpg" alt="">
+        </div>
+    </div>
+    <div class="m-0 row justify-content-center vh-100 bg-primary-subtle align-items-center ">
+        <div class="d-none d-md-block col-md-5">
+            <img class="img-fluid " src="images/professional-img.png" alt="">
+        </div>
+        <div class="col-10 col-md-5 ">
+            <h1 class="fw-bold text-primary">WE PROVIDE PROFESSIONAL HOME SERVICE</h1>
+            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, distinctio quam odit
+                pariatur excepturi
+                itaque recusandae, temporibus explicabo, enim voluptates repellat. Fuga vero cum provident id nisi
+                necessitatibus earum voluptatibus Lorem ipsum dolor sit. <span id="here2" class="collapse">Lorem ipsum
+                    dolor sit amet consectetur
+                    adipisicing elit. Rem minus eos, nostrum consectetur sunt accusantium?</span>
+            </p>
+            <button data-bs-toggle="collapse" data-bs-target="#here2" style="border-radius: 2px;"
+                class="mt-3 btn btn-warning text-white p-5 pt-2 pb-2 fw-bold ">READ MORE</button>
+        </div>
+    </div>
+    <h1 class="mt-5 mb-5 text-center pt-5">OUR SERVICES</h1>
+    <div class="row justify-content-center m-0 mb-5">
+        <div class="items1 text-center card border-0 col-10 col-md-3 p-2 pt-3 pb-3 m-2"
+            style="margin-left: 30px;margin-right: 30px;">
+            <img class="mx-auto mb-3" src="images/s1.png" alt="" width="80px">
+            <h4 class="mx-auto ">Maintenance</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia sapiente beatae. Optio, natus
+            </p>
+        </div>
+        <div class="items1 text-center card border-0 col-10 col-md-3 p-2 pt-3 pb-3 m-2"
+            style="margin-left: 30px;margin-right: 30px;">
+            <img class="mx-auto mb-3" src="images/s2.png" alt="" width="80px">
+            <h4 class="mx-auto ">Electrical</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia sapiente beatae. Optio, natus
+            </p>
+        </div>
+        <div class="items1 text-center card border-0 col-10 col-md-3 p-2 pt-3 pb-3 m-2"
+            style="margin-left: 30px;margin-right: 30px;">
+            <img class="mx-auto mb-3" src="images/s3.png" alt="" width="80px">
+            <h4 class="mx-auto ">Plumbing</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia sapiente beatae. Optio, natus
+            </p>
+        </div>
+        <div class="heres3 collapse items1 text-center card border-0 col-10 col-md-3 p-2 pt-3 pb-3 m-2"
+            style="margin-left: 30px;margin-right: 30px;">
+            <img class="mx-auto mb-3" src="images/s3.png" alt="" width="80px">
+            <h4 class="mx-auto ">Plumbing</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia sapiente beatae. Optio, natus
+            </p>
+        </div>
+        <div class="heres3 collapse items1 text-center card border-0 col-10 col-md-3 p-2 pt-3 pb-3 m-2"
+            style="margin-left: 30px;margin-right: 30px;">
+            <img class="mx-auto mb-3" src="images/s2.png" alt="" width="80px">
+            <h4 class="mx-auto ">Electrical</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia sapiente beatae. Optio, natus
+            </p>
+        </div>
+        <div class="heres3 collapse items1 text-center card border-0 col-10 col-md-3 p-2 pt-3 pb-3 m-2"
+            style="margin-left: 30px;margin-right: 30px;">
+            <img class="mx-auto mb-3" src="images/s1.png" alt="" width="80px">
+            <h4 class="mx-auto ">Maintenance</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia sapiente beatae. Optio, natus
+            </p>
+        </div>
+    </div>
+    <button data-bs-toggle="collapse" data-bs-target=".heres3" style="border-radius: 1px;"
+        class="mt-3 btn btn-primary d-block mx-auto text-white p-5 pt-2 pb-2 fw-bold mb-5">VIEW MORE
+    </button>
+    <br>
+    <h1 class="p-5 text-center mb-5">WHAT OUR CLIENTS SAY</h1>
+    <!-- start -->
+    <div id="carouselExampleIndicators" class="carousel slide mb-5 carousel-dark ">
+        <div class="carousel-inner ">
+            <div class="carousel-item active ">
+                <div class="row w-100 justify-content-evenly">
+                    <div class="col-10 col-md-5 card Parentt m-3">
+                        <div class="card-header bg-white p-4 row">
+                            <img class="imgRadios " src="images/client-2.jpg" alt="">
+                            <div class="col-4 ">
+                                <br>
+                                <p class="mt-3 mb-0">Jorch morik</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas eos sint ipsa,
+                                dolorum alias tempore, quam labore enim, asperiores praesentium minus et beatae veniam
+                                eveniet consequatur aspernatur harum inventore.</p>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-5 d-none d-sm-block card Parentt m-3">
+                        <div class="card-header bg-white p-4 row">
+                            <img class="imgRadios " src="images/client-1.jpg" alt="">
+                            <div class="col-4 ">
+                                <br>
+                                <p class="mt-3 mb-0">Jorch morik</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas eos sint ipsa,
+                                dolorum alias tempore, quam labore enim, asperiores praesentium minus et beatae veniam
+                                eveniet consequatur aspernatur harum inventore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row w-100 justify-content-evenly">
+                    <div class="col-10 col-md-5 card Parentt m-3">
+                        <div class="card-header bg-white p-4 row">
+                            <img class="imgRadios " src="images/client-2.jpg" alt="">
+                            <div class="col-4 ">
+                                <br>
+                                <p class="mt-3 mb-0">Jorch morik</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas eos sint ipsa,
+                                dolorum alias tempore, quam labore enim, asperiores praesentium minus et beatae veniam
+                                eveniet consequatur aspernatur harum inventore.</p>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-5 d-none d-sm-block card Parentt m-3">
+                        <div class="card-header bg-white p-4 row">
+                            <img class="imgRadios " src="images/client-1.jpg" alt="">
+                            <div class="col-4 ">
+                                <br>
+                                <p class="mt-3 mb-0">Jorch morik</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas eos sint ipsa,
+                                dolorum alias tempore, quam labore enim, asperiores praesentium minus et beatae veniam
+                                eveniet consequatur aspernatur harum inventore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row w-100 justify-content-evenly">
+                    <div class="col-10 col-md-5 card Parentt m-3">
+                        <div class="card-header bg-white p-4 row">
+                            <img class="imgRadios " src="images/client-2.jpg" alt="">
+                            <div class="col-4 ">
+                                <br>
+                                <p class="mt-3 mb-0">Jorch morik</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas eos sint ipsa,
+                                dolorum alias tempore, quam labore enim, asperiores praesentium minus et beatae veniam
+                                eveniet consequatur aspernatur harum inventore.</p>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-5 d-none d-sm-block card Parentt m-3">
+                        <div class="card-header bg-white p-4 row">
+                            <img class="imgRadios " src="images/client-1.jpg" alt="">
+                            <div class="col-4 ">
+                                <br>
+                                <p class="mt-3 mb-0">Jorch morik</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas eos sint ipsa,
+                                dolorum alias tempore, quam labore enim, asperiores praesentium minus et beatae veniam
+                                eveniet consequatur aspernatur harum inventore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br><br>
+    <h1 class="pt-5 m-5 text-center ">CONTACT US</h1>
+    <div class="row justify-content-evenly m-0 mb-5">
+        <div class="col-10 col-md-5 ">
+            <input class="inputGroups form-control py-3 align-items-center mb-4" type="text" placeholder="Name">
+            <input class="inputGroups form-control py-3 align-items-center mb-4" type="text" placeholder="Phone Number">
+            <input class="inputGroups form-control py-3 align-items-center mb-4" type="text" placeholder="Email">
+            <textarea class="inputGroups form-control mb-5" name="" id="" cols="30" rows="6"
+                placeholder="Message">
+            </textarea>
+            <button style="border-radius: 0;" class="btn btn-primary p-5 pt-2 pb-2 fw-semibold mb-5">Send</button>
+        </div>
+        <div class="col-10 col-md-5 pt-5 pt-md-0">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42968281.77996436!2d-135.49086791312922!3d48.90442115530489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2s!4v1699118560474!5m2!1sen!2s"
+                height="400" style="border:0;" allowfullscreen="" loading="lazy" width="100%"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer style="min-height: 70vh;background-color: rgb(25, 6, 92);" class="m-0">
+        <br>
+        <h3 class="text-white text-center pt-5 mb-5 ">GET IN TOUCH</h3>
+        <div class="row justify-content-evenly m-0">
+            <div class="col-8 col-sm-4 col-md-3 mb-5">
+                <div class="mx-auto mb-4" style="border-radius: 50%;width: 100px;height: 100px;background-color: blue;">
+                    <i class="fa fa-map-marker text-center " style="font-size: 30px;color: #fff;line-height: 100px;margin-left: 40px;"></i>
+                </div>
+                <p class="text-white text-center ">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-8 col-sm-4 col-md-3 mb-5">
+                <div class="mx-auto mb-4" style="border-radius: 50%;width: 100px;height: 100px;background-color: blue;">
+                    <i class="fa fa-phone text-center " style="font-size: 30px;color: #fff;line-height: 100px;margin-left: 37px;"></i>
+                </div>
+                <p class="text-white text-center ">+02 1234567890</p>
+            </div>
+            <div class="col-8 col-sm-4 col-md-3 mb-5">
+                <div class="mx-auto mb-4" style="border-radius: 50%;width: 100px;height: 100px;background-color: blue;">
+                    <i class="fa fa-envelope text-center " style="font-size: 30px;color: #fff;line-height: 100px;margin-left: 35px;"></i>
+                </div>
+                <p class="text-white text-center ">demo@gmail.com</p>
+            </div>
+        </div>
+        <h3 class="text-white text-center mb-4">FOLLOW US</h3>
+        <div style="height: 33px;width: 150px;" class="bg-white mx-auto text-center mb-5">
+            <i class="fa fa-facebook-f m-2" style="font-size: 20px;color: rgb(73, 73, 234);"></i>
+            <i class="fa fa-twitter m-2" style="font-size: 20px;color: rgb(73, 73, 234);"></i>
+            <i class="fa fa-youtube m-2" style="font-size: 20px;color: rgb(73, 73, 234);"></i>
+            <i class="fa fa-instagram m-2" style="font-size: 20px;color: rgb(73, 73, 234);"></i>
+        </div>
+        <div style="width: 80%;" class="mx-auto pt-2 ">
+            <hr style="border: 1px solid white;opacity: 1;">
+        </div>
+        <br>
+        <p class="text-white text-center ">&COPY;2023 ALL Rights Reserved By Free Html Templates</p>
+        <br>
+    </footer>
+
+
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
